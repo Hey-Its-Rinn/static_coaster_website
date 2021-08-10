@@ -1,0 +1,192 @@
+/* .colors {
+yellow-green:   #ecf39e;
+light-green:    #90a955;
+green:          #4f772d;
+dark-green:     #31572c;
+darker-green:   #132a13;
+} */
+
+.header {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.header img {
+    float: left;
+    width: 65px;
+    height: 65px;
+    background: none;
+}
+
+.header h1 {
+    margin: auto;
+    vertical-align: middle;
+}
+
+body
+{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    min-width: 400px;
+}
+
+header {
+  background-color: #ecf39e;
+  color: #31572c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #90a955;
+  width: 100%;
+}
+
+button {
+    width: 16.666%;
+    color: #132a13;
+    background-color: #ecf39e;
+}
+
+#types_nav button{
+    width: 33.333%;
+}
+
+button:hover {
+    color: #ecf39e;
+    background-color: #132a13;
+}
+
+
+body {
+  background-color: #132a13;
+}
+
+main {
+  background-color: #90a955;
+  /* padding-top: 5px; */
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#wrapper {
+  background-color: #31572c;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+
+footer {
+  
+  background-color: #132a13;
+  color: #90a955;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+#types_nav {
+    width: 100%;
+}
+
+#github-logo, #linkedin-logo {
+    background: #ecf39e;
+    height: 40px;
+    width: auto;
+    padding: 5px;
+}
+
+table {
+    width: 500px;
+    margin: auto;
+    font-weight: bold;
+}
+
+td, th, table {
+    width: 50%;
+    border: 3px solid #31572c;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+figure img {
+    width: 800px;
+    height: auto;
+}
+
+
+#footer {
+    display: flex;
+    column-gap: 20px;
+}
+
+#footer p{
+    font-size: 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+summary:hover {
+    background:#ecf39e;
+}
+
+iframe {
+    border: 0;
+}
+
+form {
+    width: 60%;
+    display: grid;
+    grid-gap: 1em;
+    gap: 1em;
+    grid-template-columns: 12em 1fr;
+  }
+
+@media (max-width: 1024px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    button {
+        width: 33.333%;
+    }
+    figure img {
+        width: 80%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .header img{
+        float: none;
+    }
+    button {
+        width: 100%;
+    }
+    #types_nav button{
+        width: 100%;
+    }
+    iframe {
+        width: auto;
+        height: auto;
+    }
+    #footer {
+        display: grid;
+        columns: 2;
+    }
+    figure img {
+        width: 300px;
+        height: auto;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1em;
+        width: 80%;
+      }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="coasters.css" />
+    <link rel="icon" href="rinn_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A collection of some basic information about roller coasters."
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div class="header">
+          <img src="rinn_logo.png" alt="rinn logo" />
+          <h1>Rinn's Coaster Site</h1>
+        </div>
+      </header>
+      <nav>
+        <button type="button" onclick="location.href='index.html'">Home</button
+        ><!--
+            --><button
+          type="button"
+          onclick="location.href='manufacturers.html'"
+        >
+          Manufactures</button><!--
+            --><button type="button" onclick="location.href='types.html'">
+          Coaster Types</button><!--
+            --><button
+          type="button"
+          onclick="location.href='coaster_career.html'">
+          Rinn's Coaster "Career"</button
+        ><!--
+            --><button type="button" onclick="location.href='trip_guide.html'">
+          Trip Planning Guide</button
+        ><!--
+            --><button type="button" onclick="location.href='references.html'">
+          References
+        </button>
+      </nav>
+
+      <main>
+        <h2>Welcome</h2>
+        <p>
+          I love roller coasters. This site is a project I put together to
+          practice some web development while sharing some information on a
+          topic I think is fun.
+        </p>
+        <p>
+            Just for fun, and after exploring the site, you can share what your favorite coaster, park or coaster type is:
+        </p>
+        <form method="post" action="/contact-form-handler.php">
+            <label for="favCoaster">What is your favorite coaster, if you have one? </label>
+            <input type="text" id="favCoaster" name="favCoaster"  />
+            <label for="favPark">What is your favorite park, if you have one?: </label>
+            <input type="text" id="favPark" name="favPark"  />
+
+            <label for="favType">What is your favorite type of roller coaster?</label>
+            <input
+              type="text"
+              name="favType"
+              id="favType"
+              list="types"
+            />
+            <datalist id="types">
+              <option>Wood</option>
+              <option>Steel</option>
+              <option>Hybrid</option>
+            </datalist>
+
+            <input type="submit" value="Send Now" id="mySubmit" />
+          </form>
+      </main>
+      <footer>
+        <div id="footer">
+          <p>Rinn has a github:</p>
+          <a href="https://github.com/Hey-Its-Rinn">
+            <img id="github-logo" src="GitHub_Logo.png" alt="github logo" />
+          </a>
+          <p>Rinn is on LinkedIN:</p>
+          <a href="https://www.linkedin.com/in/corinneneidig/">
+            <img
+              id="linkedin-logo"
+              src="Linkedin-Logo.png"
+              alt="linkedin logo"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
